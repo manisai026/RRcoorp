@@ -14,6 +14,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    background-position: center;
 }
 .vc{
     /* position: absolute;
@@ -26,8 +27,9 @@
 }
 #s2{
     background-image: url('bg2.png');
+    background-position: center;
     background-size: cover;
-    height: 100vh !important;
+    height: 80vh !important;
     background-repeat: no-repeat;
 }
 .scroll{
@@ -42,11 +44,11 @@
 .video{
     width: 27vw;
 }
-body{
-    overflow-x: hidden;
-}
 .logo{
     width: 250px;
+}
+.carousel-item img{
+    width: 600px !important;
 }
 @media(max-width: 990px){
     .vc{
@@ -72,4 +74,21 @@ body{
     #s2{
         height: 70vh;
     }
+    .carousel-item img{
+        width: 300px !important;
+    }
+    .carousel{
+        margin-top: 25vh;
+    }
+}
+
+@media (min-width : 990px){   
+    .carousel{
+        margin-top: 15vh;
+    }
+}
+
+
+body{
+    overflow-x: hidden !important;
 }
